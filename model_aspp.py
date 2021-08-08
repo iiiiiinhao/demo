@@ -11,7 +11,7 @@ import warp
 
 class conv_down(nn.Module):
     """
-    Conv3d:三维卷积层, 输入的尺度是(N, C_in,D,H,W)，输出尺度（N,C_out,D_out,H_out,W_out）
+    Conv3d:3D convolutional layer, input size (N, C_in,D,H,W)，output size（N,C_out,D_out,H_out,W_out）
     BatchNorm3d:在每一个小批量（mini-batch）数据中，计算输入各个维度的均值和标准差。gamma与beta是可学习的大小为C的参数向量（C为输入大小）
     在训练时，该层计算每次输入的均值与方差，并进行移动平均。移动平均默认的动量值为0.1。
     在验证时，训练求得的均值/方差将用于标准化验证数据。
