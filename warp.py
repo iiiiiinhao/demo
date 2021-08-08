@@ -35,7 +35,7 @@ class Warper3d(nn.Module):
         yy1 = 2.0 * yy / W - 1  # max(H-1,1)
         zz1 = 2.0 * zz / D - 1  # max(H-1,1)
 
-        self.grid[0,:,:,:,0] = zz1
+        self.grid[0, :, :, :, 0] = zz1
         self.grid[0, :, :, :, 1] = yy1
         self.grid[0, :, :, :, 2] = xx1
 
