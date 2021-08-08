@@ -1,12 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Nov 16 11:13:22 2018
 
-@author: user
-
-https://github.com/NVlabs/PWC-Net/blob/master/PyTorch/models/PWCNet.py
-"""
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
